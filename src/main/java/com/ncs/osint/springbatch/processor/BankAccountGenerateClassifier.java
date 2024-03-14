@@ -1,8 +1,9 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.processor;
 
 import com.ncs.osint.springbatch.enitity.BankAccount;
 import com.ncs.osint.springbatch.enitity.Client;
 import com.ncs.osint.springbatch.enums.BankAccountType;
+import com.ncs.osint.springbatch.processor.*;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.classify.Classifier;
 

@@ -1,4 +1,4 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.writer;
 
 import com.ncs.osint.springbatch.enitity.BankAccount;
 import org.springframework.batch.core.configuration.annotation.StepScope;
@@ -11,7 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.WritableResource;
 
 @Configuration
-public class ClientInvalidWriterConfig {
+public class ClientInvalidWriter {
   @StepScope
   @Bean
   public FlatFileItemWriter<BankAccount> clientInvalidFileWriter(

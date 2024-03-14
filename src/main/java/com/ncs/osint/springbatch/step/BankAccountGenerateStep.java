@@ -1,4 +1,4 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.step;
 
 
 import com.ncs.osint.springbatch.enitity.BankAccount;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-public class BankAccountGenerateStepConfig {
+public class BankAccountGenerateStep {
 
   @Bean
   public Step bankAccountGenerateStep(

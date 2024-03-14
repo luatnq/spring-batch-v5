@@ -1,4 +1,4 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.writer;
 
 
 import com.ncs.osint.springbatch.enitity.BankAccount;
@@ -18,11 +18,9 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.WritableResource;
 
 import javax.sql.DataSource;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 @Configuration
-public class BankAccountGenerateWriterConfig {
+public class BankAccountGenerateWriter {
   @Bean
   public CompositeItemWriter<BankAccount> bankAccountGenerateCompositeWriter(
         @Qualifier("bankAccountGenerateFileWriter") FlatFileItemWriter<BankAccount> bankAccountGenerateFileWriter,

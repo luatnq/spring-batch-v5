@@ -1,4 +1,4 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.writer;
 
 
 import com.ncs.osint.springbatch.enitity.BankAccount;
@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Objects;
 
 @Configuration
-public class BankAccountClassifierWriterConfig {
+public class BankAccountClassifierWriter {
 
   @Bean
   public ClassifierCompositeItemWriter<BankAccount> bankAccountClassifier(

@@ -1,4 +1,4 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.processor;
 
 import com.ncs.osint.springbatch.enitity.BankAccount;
 import com.ncs.osint.springbatch.enitity.Client;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class BankAccountGenerateProcessorConfig {
+public class BankAccountGenerateProcessor {
 
   @Bean
   public ItemProcessor<Client, BankAccount> bankAccountGenerateProcessor() {

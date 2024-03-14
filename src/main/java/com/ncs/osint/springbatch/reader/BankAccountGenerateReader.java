@@ -1,4 +1,4 @@
-package com.ncs.osint.springbatch.job.banking;
+package com.ncs.osint.springbatch.reader;
 
 
 import com.ncs.osint.springbatch.enitity.Client;
@@ -14,7 +14,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import javax.sql.DataSource;
 
 @Configuration
-public class BankAccountGenerateReaderConfig {
+public class BankAccountGenerateReader {
   @Bean
   public JdbcPagingItemReader<Client> bankAccountGenerateReader(
         @Qualifier("appDataSource") DataSource dataSource,
